@@ -14,7 +14,7 @@ const Sidebar = () => {
   return (
     <>
       <Image
-        src="/images/picture1.png"
+        src="https://scontent.frba2-1.fna.fbcdn.net/v/t39.30808-1/p200x200/240804931_101757502242948_3966444041472279998_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_ohc=17-X5w6LKWoAX8A4k6T&_nc_ht=scontent.frba2-1.fna&oh=45a7fd597c3ea68f771b96948e94018b&oe=614034C5"
         alt="avatar"
         className=" mx-auto border rounded-full "
         height="128px"
