@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, } from "react-icons/ai";
+import {AiFillBulb, AiFillGithub, AiFillInstagram, AiFillLinkedin, } from "react-icons/ai";
 import { GiTie } from "react-icons/gi";
 import { GoLocation } from "react-icons/go";
 import { useTheme } from "next-themes";
@@ -16,7 +16,7 @@ const Sidebar = () => {
       <Image
         src="https://scontent.frba2-1.fna.fbcdn.net/v/t39.30808-1/p200x200/240804931_101757502242948_3966444041472279998_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_ohc=17-X5w6LKWoAX8A4k6T&_nc_ht=scontent.frba2-1.fna&oh=45a7fd597c3ea68f771b96948e94018b&oe=614034C5"
         alt="avatar"
-        className=" mx-auto border rounded-full "
+        className="mx-auto border-solid border-1 border-red-500 rounded-full "
         height="128px"
         width="128px"
         layout="intrinsic"
@@ -66,17 +66,17 @@ const Sidebar = () => {
       {/* Email Button */}
 
       <button
-        className="w-8/12 px-5 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-red-500 to-blue-500 hover:scale-105 focus:outline-none"
+        className="w-6/12 px-5 py-2 text-white bg-black rounded-l-full cursor-pointer bg-gradient-to-r from-red-500 to-blue-500 hover:scale-105 focus:outline-none"
         onClick={() => window.open("mailto:abdllahlyounsi@gmail.com")}
       >
         Email me
       </button>
       <button
         onClick={changeTheme}
-        className="w-8/12 px-5 py-2 my-4 text-white rounded-full cursor-pointer bg-gradient-to-r from-red-500 to-blue-500 focus:outline-none hover:scale-105 "
+        className="w-3/12 px-2 py-2 ml-1 text-white rounded-r-full cursor-pointer bg-gradient-to-r to-blue-600 from-blue-500 focus:outline-none hover:scale-105 "
       >
 
-        Toggle Themme
+        { theme === "light" ? 'Dark' : 'Light'}
       </button>
     </>
   );

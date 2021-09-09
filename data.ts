@@ -23,7 +23,7 @@ export const services: Service[] = [
     Icon: AiOutlineApi,
     title: "API Development",
     about:
-      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Restfull API</b> ",
   },
   {
     Icon: MdDeveloperMode,
@@ -38,9 +38,9 @@ export const services: Service[] = [
   },
   {
     Icon: RiComputerLine,
-    title: "Whatever",
+    title: "Graphic Design",
     about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+      "I can do infographics using <b>illustrator</b>",
   },
 ];
 

@@ -10,7 +10,9 @@ export const NavItem: FunctionComponent<{
   if (active === value) className += " text-red-500";
 
   return (
-    <li className={className} onClick={() => handlerFilterCategory(value)}>
+    <li className={className} onClick={() => 
+     
+      handlerFilterCategory(value)}>
       {value}
     </li>
   );
