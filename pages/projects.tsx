@@ -4,6 +4,7 @@ import { fadeUp, stagger } from "../animations";
 import ProjectCard from "../components/ProjectCard";
 import ProjectsNavbar from "../components/ProjectsNavbar";
 import { projects as projectsData } from "../data";
+import Head from 'next/head'
 import { Category } from "../types";
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
@@ -24,6 +25,10 @@ const Projects = () => {
   };
 
   return (
+    <>
+    <Head>
+          <title>Projects</title>
+      </Head>
     <div className="px-5 py-2 overflow-y-scroll" style={{ height: "75vh" }}>
       <ProjectsNavbar
         handlerFilterCategory={handlerFilterCategory}
@@ -38,6 +43,7 @@ const Projects = () => {
         ))}
       </motion.div>
     </div>
+    </>
   );
 };
 

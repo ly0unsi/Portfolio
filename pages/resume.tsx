@@ -1,20 +1,19 @@
 import Bar from "../components/Bar";
 import { languages, tools } from "../data";
-import { motion } from 'framer-motion'
-import { fade, fadeUp, stagger } from "../animations";
+import Head from 'next/head'
 const Resume = () => {
 
   return (
+    <>
+    <Head>
+          <title>Resume</title>
+      </Head>
     <div className="px-6 py-2">
       {/* //! Education & Experience */}
       <div className="grid gap-6 md:grid-cols-2">
-      <motion.div
-          variants={stagger}
-          initial="initial"
-          animate="animate"
-        >
+        <div>
           <h5 className="my-3 text-2xl font-bold">Education</h5>
-          <motion.div  variants={fade}>
+          <div className="">
             <h5 className="my-2 text-xl font-bold">
               'Informatique Industrielle'
             </h5>
@@ -23,20 +22,16 @@ const Resume = () => {
               I am currently pursuing "Licence specialisé" in web/app developement
               from Ibn Tofail University
             </p>
-          </motion.div>
-        </motion.div>
-        <motion.div
-          variants={fade}
-          initial="initial"
-          animate="animate"
-        >
+          </div>
+        </div>
+        <div>
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
-          <motion.div  variants={fade}>
+          <div className="">
             <h5 className="my-2 text-xl font-bold">Software Developer Jr.</h5>
             <p className="font-semibold">Tata Consultancy Services</p>
             <p className="my-3">I don't know why I am doing this job</p>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
 
       {/*Languages & Tools */}
@@ -60,6 +55,7 @@ const Resume = () => {
         </div>
       </div>
     </div >
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Head from 'next/head'
 import {
   GetServerSideProps,
   GetServerSidePropsContext,
@@ -14,6 +15,10 @@ const About: NextPage = () => {
   // console.log(services);
 
   return (
+    <>
+    <Head>
+          <title>Abdellah Lyounsi</title>
+      </Head>
     <motion.div
       variants={fade}
       animate="animate"
@@ -48,6 +53,7 @@ const About: NextPage = () => {
         </motion.div>
       </div>
     </motion.div>
+    </>
   );
 };
 
