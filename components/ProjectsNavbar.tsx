@@ -23,7 +23,7 @@ const ProjectsNavbar: FunctionComponent<{
   active: string;
 }> = (props) => {
   return (
-    <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
+    <div className="sticky z-99 flex px-3 py-2 space-x-3 overflow-x-auto list-none">
       <NavItem catName="all" {...props} />
       <NavItem catName="react" {...props} />
       <NavItem catName="vue" {...props} />

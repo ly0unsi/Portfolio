@@ -28,7 +28,10 @@ const ProjectCard: FunctionComponent<{
           src={image_path}
           alt={name}
           className="cursor-pointer"
-          onClick={() => setShowDetail(id)}
+          onClick={() => {
+            setShowDetail(null)
+            setShowDetail(id)
+          }}
           layout="responsive"
           height="150"
           width="300"
