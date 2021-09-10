@@ -23,4 +23,4 @@ export interface IProject {
   key_techs: string[];
 }
 
-export type Category = "react" | "node" | "vue" | "django" | "laravel";
+export type Category = "react" | "node" | "vue" | "django" | "laravel" | "all";

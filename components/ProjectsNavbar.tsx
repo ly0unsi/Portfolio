@@ -2,18 +2,18 @@ import { FunctionComponent } from "react";
 import { Category } from "../types";
 
 export const NavItem: FunctionComponent<{
-  value: Category | "all";
+  catName: Category;
   handlerFilterCategory: Function;
   active: string;
-}> = ({ value, handlerFilterCategory, active }) => {
+}> = ({ catName, handlerFilterCategory, active }) => {
   let className = "capitalize cursor-pointer hover:text-red-500";
-  if (active === value) className += " text-red-500";
+  if (active === catName) className += " text-red-500";
 
   return (
-    <li className={className} onClick={() => 
-     
-      handlerFilterCategory(value)}>
-      {value}
+    <li className={className} onClick={() =>
+
+      handlerFilterCategory(catName)}>
+      {catName}
     </li>
   );
 };
@@ -24,12 +24,12 @@ const ProjectsNavbar: FunctionComponent<{
 }> = (props) => {
   return (
     <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
-      <NavItem value="all" {...props} />
-      <NavItem value="react" {...props} />
-      <NavItem value="vue" {...props} />
-      <NavItem value="django" {...props} />
-      <NavItem value="node" {...props} />
-      <NavItem value="laravel" {...props} />
+      <NavItem catName="all" {...props} />
+      <NavItem catName="react" {...props} />
+      <NavItem catName="vue" {...props} />
+      <NavItem catName="django" {...props} />
+      <NavItem catName="node" {...props} />
+      <NavItem catName="laravel" {...props} />
     </div>
   );
 };
