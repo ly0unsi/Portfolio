@@ -2,9 +2,6 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
-import { AnimatePresence } from "framer-motion";
-import router from "next/router";
-
 function MyApp({ Component, pageProps, router }) {
   return (
     <ThemeProvider attribute="class">
@@ -18,9 +15,7 @@ function MyApp({ Component, pageProps, router }) {
           {/* //!navbar */}
           <Navbar />
           {/* //!compo */}
-          <AnimatePresence>
-            <Component {...pageProps} key={router.route} />
-          </AnimatePresence>
+            <Component {...pageProps}  />
         </div>
       </div>
     </ThemeProvider>

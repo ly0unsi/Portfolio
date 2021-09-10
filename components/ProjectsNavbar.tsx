@@ -8,10 +8,8 @@ export const NavItem: FunctionComponent<{
 }> = ({ catName, handlerFilterCategory, active }) => {
   let className = "capitalize cursor-pointer hover:text-red-500";
   if (active === catName) className += " text-red-500";
-
   return (
     <li className={className} onClick={() =>
-
       handlerFilterCategory(catName)}>
       {catName}
     </li>
