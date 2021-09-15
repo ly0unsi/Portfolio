@@ -169,18 +169,6 @@ export const projects: IProject[] = [
       "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
     key_techs: ["JQuery", "Django", "Boottrap"],
   },
-
-  {
-    id: 6,
-    name: "Color Classification using tf.js",
-    image_path: "/images/color.jpg",
-    deployed_url: "!#",
-    github_url: "https://github.com/Dey-Sumit/color-classification",
-    category: ["laravel"],
-    description:
-      "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
-    key_techs: ["laravel", "TensorFlow.js", "Vanilla js"],
-  },
   {
     id: 7,
     name: "Ecommerce App ",
