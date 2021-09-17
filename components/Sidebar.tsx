@@ -13,6 +13,8 @@ const Sidebar = () => {
 
   return (
     <>
+    {theme === "light" ?
+    <>
       <Image
         src="/images/My logo.png"
         alt="avatar"
@@ -22,6 +24,7 @@ const Sidebar = () => {
         layout="intrinsic"
         quality="100"
       />
+      
      <Image
         src="/images/Abdellah Lyounsi.svg"
         alt="avatar"
@@ -30,7 +33,25 @@ const Sidebar = () => {
         width='230px'
         layout="intrinsic"
         quality="100"
-      />
+      /> </> : <> <Image
+      src="/images/My logo Dark.png"
+      alt="avatar"
+      className="mx-auto border-solid border-1 border-red-500 rounded-full "
+      height="120px"
+      width="120px"
+      layout="intrinsic"
+      quality="100"
+    />
+    
+   <Image
+      src="/images/Abdellah Lyounsi Dark.svg"
+      alt="avatar"
+      className="mx-auto text-red-500"
+      height="50px"
+      width='230px'
+      layout="intrinsic"
+      quality="100"
+    /> </>}
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
         Web Developer
       </p>
