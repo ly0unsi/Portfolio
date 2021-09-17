@@ -14,7 +14,7 @@ const Resume = () => {
         {/* //! Education & Experience */}
         <div className="grid gap-6 md:grid-cols-2">
           <motion.div variants={fadeUp} initial="initial" animate="animate" >
-            <h5 className="my-3 text-2xl font-bold">Education</h5>
+            <h5 className="my-3 text-2xl font-bold border-b-2 border-red-500 dark:border-gray-700">Education</h5>
             <div className="">
               <h5 className="my-2 text-xl font-bold">
                 Informatique Industrielle
@@ -27,7 +27,7 @@ const Resume = () => {
             </div>
           </motion.div>
           <motion.div variants={fadeUp} initial="initial" animate="animate">
-            <h5 className="my-3 text-2xl font-bold">Experience</h5>
+            <h5 className="my-3 text-2xl font-bold border-b-2 border-red-500 dark:border-gray-700">Experience</h5>
             <div className="">
               <h5 className="my-2 text-xl font-bold">Software Developer Jr.</h5>
               <p className="font-semibold">Tata Consultancy Services</p>

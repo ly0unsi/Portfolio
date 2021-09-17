@@ -18,7 +18,9 @@ const NavItem: FunctionComponent<{
             </span>
                </a>
       </Link>
-   ) : null
+   ) : <span className='mx-2 font-bold border-b-2 md:text-2xl border-red-500 '>
+         {name}
+      </span>
 }
 const Navbar = () => {
    const { pathname } = useRouter()
@@ -34,9 +36,7 @@ const Navbar = () => {
 
    return (
       <div className='flex items-center justify-between px-5 py-3 my-3'>
-         <span className='text-xl font-bold border-b-4 md:text-2xl border-red-500'>
-            {active}
-         </span>
+         
 
          <div className='text-base font-normal md:text-xl'>
             <NavItem
