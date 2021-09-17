@@ -14,17 +14,23 @@ const Sidebar = () => {
   return (
     <>
       <Image
-        src="https://scontent.frba2-1.fna.fbcdn.net/v/t39.30808-1/p200x200/240804931_101757502242948_3966444041472279998_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_ohc=17-X5w6LKWoAX8A4k6T&_nc_ht=scontent.frba2-1.fna&oh=45a7fd597c3ea68f771b96948e94018b&oe=614034C5"
+        src="/images/My logo.png"
         alt="avatar"
         className="mx-auto border-solid border-1 border-red-500 rounded-full "
-        height="128px"
-        width="128px"
+        height="110px"
+        width="110px"
         layout="intrinsic"
         quality="100"
       />
-      <h3 className="my-4 text-3xl font-small font-bold font-gochi">
-        <span className="text-red-500 ">Abdellah</span> LYOUNSI
-      </h3>
+     <Image
+        src="/images/Abdellah Lyounsi.svg"
+        alt="avatar"
+        className="mx-auto text-red-500"
+        height="60px"
+        width='230px'
+        layout="intrinsic"
+        quality="100"
+      />
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
         Web Developer
       </p>
