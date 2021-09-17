@@ -17,8 +17,8 @@ const Sidebar = () => {
         src="/images/My logo.png"
         alt="avatar"
         className="mx-auto border-solid border-1 border-red-500 rounded-full "
-        height="110px"
-        width="110px"
+        height="120px"
+        width="120px"
         layout="intrinsic"
         quality="100"
       />
@@ -26,7 +26,7 @@ const Sidebar = () => {
         src="/images/Abdellah Lyounsi.svg"
         alt="avatar"
         className="mx-auto text-red-500"
-        height="60px"
+        height="50px"
         width='230px'
         layout="intrinsic"
         quality="100"
