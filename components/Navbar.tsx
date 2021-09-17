@@ -18,7 +18,7 @@ const NavItem: FunctionComponent<{
             </span>
                </a>
       </Link>
-   ) : <span className='mx-2 font-bold border-b-2 md:text-2xl border-red-500 '>
+   ) : <span className='mx-2 font-bold md:text-2xl e text-red-500'>
          {name}
       </span>
 }
