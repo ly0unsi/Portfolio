@@ -1,7 +1,6 @@
 import { useState, useEffect, FunctionComponent } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-
 const NavItem: FunctionComponent<{
    active: string
    setActive: Function
@@ -37,8 +36,9 @@ const Navbar = () => {
    return (
       <div className='flex items-center justify-between px-5 py-3 my-3'>
          
-
-         <div className='text-base font-normal md:text-xl'>
+       
+         <div className='text-base flex font-normal md:text-xl'>
+        
             <NavItem
                active={active}
                setActive={setActive}
