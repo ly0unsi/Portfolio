@@ -26,16 +26,14 @@ const About: NextPage = () => {
         exit="exit"
         className="flex flex-col flex-grow px-6 pt-1 ">
         <h6 className="my-3 text-base font-medium text-justify">
-          I am currently pursuing Professionel licence in Web/app developement
-          from univesity Ibn Tofail. I have 3+ years of experience in
-          Web Development.
+        Je poursuis actuellement une licence professionnelle en développement Web/application de l'université Ibn Tofail. J'ai plus de 3 ans d'expérience dans le développement Web.
         </h6>
         <div
           className="flex-grow p-4 mt-5 bg-gray-200 dark:bg-dark-100 "
           style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
         >
           <h4 className="my-3 text-xl font-semibold tracking-wide">
-            What I am doing
+          Qu'est-ce que je peux faire
           </h4>
 
           <motion.div className="grid gap-6 my-3 md:grid-cols-2" variants={stagger} initial='initial' animate='animate' >

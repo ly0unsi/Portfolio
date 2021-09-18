@@ -1,8 +1,11 @@
 import {AiFillBulb, AiFillGithub, AiFillInstagram, AiFillLinkedin, } from "react-icons/ai";
-import { GiTie } from "react-icons/gi";
+import { HiOutlineDocumentDownload } from "react-icons/hi";
 import { GoLocation } from "react-icons/go";
+import { FaSun,FaMoon } from "react-icons/fa";
+
 import { useTheme } from "next-themes";
 import Image from "next/image";
+
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
@@ -53,7 +56,7 @@ const Sidebar = () => {
       quality="100"
     /> </>}
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
-        Web Developer
+        Développeur web
       </p>
       {/* Resume */}
       <a
@@ -61,8 +64,10 @@ const Sidebar = () => {
         download="Abdellah-Lyounsi.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
-        <GiTie className="w-6 h-6" />
-        <span>Download Resume</span>
+      
+        <span className='flex font-bold'>C.V </span> 
+        <span className='flex ml-1'>(<HiOutlineDocumentDownload className="w-6 h-6 " />)</span>
+        
       </a>
 
       {/* Socials */}
@@ -91,7 +96,7 @@ const Sidebar = () => {
       </div>
 
       {/* Email Button */}
-
+      <div className="flex w-12/12 justify-center">
       <button
         className="w-6/12 px-5 py-2 text-white bg-black rounded-l-full cursor-pointer bg-gradient-to-r from-red-500 to-blue-500 hover:scale-105 focus:outline-none"
         onClick={() => window.open("mailto:abdllahlyounsi@gmail.com")}
@@ -100,11 +105,12 @@ const Sidebar = () => {
       </button>
       <button
         onClick={changeTheme}
-        className="w-3/12 px-2 py-2 ml-1 text-white rounded-r-full cursor-pointer bg-gradient-to-r to-blue-600 from-blue-500 focus:outline-none hover:scale-105 "
+        className="w-2/12 px-2 py-2 ml-1 text-white rounded-r-full cursor-pointer bg-gradient-to-r to-blue-600 from-blue-500 focus:outline-none hover:scale-105 "
       >
 
-        { theme === "light" ? 'Dark' : 'Light'}
+        { theme === "light" ? <FaMoon size={22}/>  : <FaSun size={22}/>}
       </button>
+      </div>
     </>
   );
 };

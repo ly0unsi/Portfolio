@@ -17,7 +17,7 @@ const NavItem: FunctionComponent<{
             </span>
                </a>
       </Link>
-   ) : <span className='mx-2 font-bold md:text-2xl e text-red-500'>
+   ) : <span className='mx-2 font-bold text-red-500'>
          {name}
       </span>
 }
@@ -28,8 +28,8 @@ const Navbar = () => {
 
    //later
    useEffect(() => {
-      if (pathname === '/') setActive('About')
-      else if (pathname === '/projects') setActive('Projects')
+      if (pathname === '/') setActive('A Propos')
+      else if (pathname === '/projects') setActive('Projets')
       else if (pathname === '/resume') setActive('Resume')
    }, [])
 
@@ -42,7 +42,7 @@ const Navbar = () => {
             <NavItem
                active={active}
                setActive={setActive}
-               name='About'
+               name='A Propos'
                route='/'
             />
             <NavItem
@@ -54,8 +54,8 @@ const Navbar = () => {
             <NavItem
                active={active}
                setActive={setActive}
-               name='Projects'
-               route='/projects'
+               name='Projets'
+               route='/projets'
             />
          </div>
       </div>

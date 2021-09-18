@@ -6,7 +6,7 @@ import ProjectsNavbar from "../components/ProjectsNavbar";
 import { projects as projectsData } from "../data";
 import Head from 'next/head'
 import { Category } from "../types";
-const Projects = () => {
+const Projets = () => {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("all");
 
@@ -47,4 +47,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Projets;

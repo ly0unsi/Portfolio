@@ -11,36 +11,36 @@ export const services: Service[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+      "Je peux créer un SPA magnifique et évolutif en utilisant <b> HTML/CSS</b>,<b>Vue.js</b> et <b>React.js</b>",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "handle database, server, api using <b>laravel </b> & other popular frameworks",
+      "Gérer la base de données, le serveur, l'api en utilisant <b>laravel </b> et d'autres frameworks populaires",
   },
   {
     Icon: AiOutlineApi,
     title: "API Development",
     about:
-      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Restfull API</b> ",
+      "Je peux développer une API REST robuste en utilisant <b>django-rest-api</b> & <b>Restfull API</b>",
   },
   {
     Icon: MdDeveloperMode,
-    title: "Competitive Coder",
-    about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
+    title: "Competitif Codeur",
+    about: "Un résolveur de problèmes quotidien dans <b>HackerRank</b> et <b>Leet Code</b>",
   },
   {
     Icon: AiOutlineAntDesign,
     title: "UI/UX designer",
     about:
-      "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+      "Superbe concepteur d'interface utilisateur utilisant <b>Figma</b> et <b>Framer</b> ",
   },
   {
     Icon: RiComputerLine,
     title: "Graphic Design",
     about:
-      "I can do infographics using <b>illustrator</b>",
+      "Je peux faire des infographies en utilisant <b>illustrator</b>",
   },
 ];
 

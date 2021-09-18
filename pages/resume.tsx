@@ -21,17 +21,16 @@ const Resume = () => {
               </h5>
               <p className="font-semibold">Est Kenitra (2019-2021)</p>
               <p className="my-3 text-justify	">
-                I am currently pursuing "Licence specialisé" in web/app developement
-                from Ibn Tofail University
+                Je suis actuellement en "Licence specialisé" en développement web/app de l'Université Ibn Tofail
               </p>
             </div>
           </motion.div>
           <motion.div variants={fadeUp} initial="initial" animate="animate">
             <h5 className="my-3 text-2xl font-bold border-b-2 border-red-500 dark:border-gray-700">Experience</h5>
             <div className="">
-              <h5 className="my-2 text-xl font-bold">Software Developer Jr.</h5>
-              <p className="font-semibold">Tata Consultancy Services</p>
-              <p className="my-3">I don't know why I am doing this job</p>
+              <h5 className="my-2 text-xl font-bold">Développeur de logiciels Jr.</h5>
+              <p className="font-semibold">Une année de freelance</p>
+              <p className="my-3">e ne sais pas pourquoi je fais ce travail</p>
             </div>
           </motion.div>
         </div>
@@ -48,7 +47,7 @@ const Resume = () => {
           </div>
 
           <div>
-            <h5 className="my-3 text-2xl font-bold">Tools & Softwares</h5>
+            <h5 className="my-3 text-2xl font-bold">Outils et logiciels</h5>
             <div className="my-2">
               {tools.map((tool, i) => (
                 <Bar value={tool} key={i} />
