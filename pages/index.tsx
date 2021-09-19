@@ -7,6 +7,7 @@ import {
   GetStaticPropsContext,
   NextPage,
 } from "next";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { fade, fadeUp, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
@@ -51,6 +52,10 @@ const About: NextPage = () => {
           </motion.div>
         </div>
       </motion.div>
+      <MessengerCustomerChat
+          pageId="103921305383739"
+          appId="1216242045469709"
+      />
     </>
   );
 };
