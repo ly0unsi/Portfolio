@@ -7,7 +7,7 @@ import {
   GetStaticPropsContext,
   NextPage,
 } from "next";
-import WhatsAppWidget from 'react-whatsapp-widget'
+import ReactWhatsapp from 'react-whatsapp';
 import 'react-whatsapp-widget/dist/index.css'
 import { fade, fadeUp, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
@@ -57,12 +57,8 @@ const About: NextPage = () => {
           pageId="103921305383739"
           appId="1216242045469709"
       /> */}
-     <WhatsAppWidget phoneNumber='212674845729' 
-     textReplyTime="Répond généralement dans l'heure" 
-     message="Bonjour! 👋🏼 \n\nQue pouvons-nous faire pour vous ?"
-     companyName="Abdellah Lyounsi"
-     sendButton='Envoyer'
-     />
+  
+     <ReactWhatsapp number="2126748457290" message="Bonjour! 👋🏼 Que pouvons-nous faire pour vous ?" />
     </>
   );
 };
