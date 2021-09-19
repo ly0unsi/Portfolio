@@ -7,7 +7,7 @@ import {
   GetStaticPropsContext,
   NextPage,
 } from "next";
-import ReactWhatsapp from 'react-whatsapp';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 import 'react-whatsapp-widget/dist/index.css'
 import { fade, fadeUp, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
@@ -53,12 +53,12 @@ const About: NextPage = () => {
           </motion.div>
         </div>
       </motion.div>
-      {/*  <MessengerCustomerChat
+        <MessengerCustomerChat
           pageId="103921305383739"
           appId="1216242045469709"
-      /> */}
+      /> 
   
-     <ReactWhatsapp number="2126748457290" message="Bonjour! 👋🏼 Que pouvons-nous faire pour vous ?" />
+    
     </>
   );
 };
