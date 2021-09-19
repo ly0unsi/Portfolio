@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps, router }) {
       </div>
       <div className='text-dark'>
         <WhatsAppWidget phoneNumber='212674845729' 
-          textReplyTime="Répond généralement dans l'heure" 
+          textReplyTime="En ligne" 
           message="Bonjour! 👋🏼 Que pouvons-nous faire pour vous ?"
           companyName="Abdellah Lyounsi"
           sendButton='Envoyer'
