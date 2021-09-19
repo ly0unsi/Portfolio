@@ -6,6 +6,7 @@ import ProjectsNavbar from "../components/ProjectsNavbar";
 import { projects as projectsData } from "../data";
 import Head from 'next/head'
 import { Category } from "../types";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 const Projets = () => {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("all");
@@ -43,6 +44,10 @@ const Projets = () => {
           ))}
         </motion.div>
       </div>
+      <MessengerCustomerChat
+          pageId="103921305383739"
+          appId="1216242045469709"
+      /> 
     </>
   );
 };

@@ -3,6 +3,7 @@ import { languages, tools } from "../data";
 import Head from 'next/head'
 import { motion } from "framer-motion";
 import { fadeUp } from "../animations";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 const Resume = () => {
 
   return (
@@ -56,6 +57,10 @@ const Resume = () => {
           </div>
         </div>
       </div >
+      <MessengerCustomerChat
+          pageId="103921305383739"
+          appId="1216242045469709"
+      /> 
     </>
   );
 };
