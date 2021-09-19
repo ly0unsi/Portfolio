@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import '../App.css';
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import WhatsAppWidget from 'react-whatsapp-widget'
@@ -20,7 +21,9 @@ function MyApp({ Component, pageProps, router }) {
           {/* //!compo */}
             <Component {...pageProps}  />
         </div>
-        <div className='text-dark'>
+        
+      </div>
+      <div className='text-dark'>
         <WhatsAppWidget phoneNumber='212674845729' 
           textReplyTime="Répond généralement dans l'heure" 
           message="Bonjour! 👋🏼 Que pouvons-nous faire pour vous ?"
@@ -28,7 +31,6 @@ function MyApp({ Component, pageProps, router }) {
           sendButton='Envoyer'
           />
           </div>
-      </div>
     </ThemeProvider>
   );
 }

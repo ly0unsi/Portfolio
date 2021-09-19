@@ -34,10 +34,8 @@ const Navbar = () => {
    }, [])
 
    return (
-      <div className='flex items-center justify-between px-5 py-3 my-3'>
-         
-       
-         <div className='text-base flex font-normal md:text-xl'>
+      <div className='sticky flex items-center justify-between px-5 py-3 my-3'>
+         <div className='sticky text-base flex font-normal md:text-xl'>
         
             <NavItem
                active={active}
