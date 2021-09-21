@@ -194,7 +194,7 @@ export const projects: IProject[] = [
     id: 8,
     name: "Forum App",
     image_path: "/images/forum app-laravel.jpg",
-    deployed_url: "unvailable",
+    deployed_url: "https://f0rumest.000webhostapp.com",
     github_url: "https://github.com/ly0unsi/Forum-laravel",
     category: ["laravel"],
     description:
